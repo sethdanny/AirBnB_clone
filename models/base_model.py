@@ -4,6 +4,7 @@
 
 import uuid
 from datetime import datetime, time, date
+from models import storage
 
 
 class BaseModel():
@@ -18,6 +19,7 @@ class BaseModel():
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
+            storage.new(self)
         else:
             for key, value in kwargs.items():
                 if key != "__class__":
@@ -35,6 +37,7 @@ class BaseModel():
         """ updates the updated_at attribute """
 
         self.updated_at = datetime.now()
+        storage.save()
 
     def to_dict(self):
         """ returns a dictionary containing all keys and values """
