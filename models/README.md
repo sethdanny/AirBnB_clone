@@ -9,3 +9,4 @@
 |review.py| Subclass of basemodel. represent the review and has three instances. Read Docstring for more|
 |state.py| Subclass of basemodel. The class has one attribute name which is a string that represents the name of the state|
 |city.py|Subclass of basemodel. The class has two class level variables,The City class also has an __init__ method which calls the parent class's __init__ method  using the super() function|
+|user.py|Subclass of model.The class has four attributes, each of which is a string data type and is initialized to an empty string. These attributes represent the email, password, first name and last name of a user respectively|
