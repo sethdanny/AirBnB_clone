@@ -5,8 +5,8 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     display: flex;
+    flex-flow: row;
     align-items: center;
-    justify-content: flex-end;
     margin-top: 20px;
 }
 .filters button{
@@ -28,10 +28,12 @@
     width: 25%;
 }
 .amenities{
-    margin-left: -4px;
+    margin-right: auto;;
+    margin-left: 5px;
 }
 .locations{
     border-right: 1px solid #DDDDDD;
+    margin-left: 5px;
 }
 .locations > h3, .amenities > h3{
     font-weight: 600;
