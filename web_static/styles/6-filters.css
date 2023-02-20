@@ -58,12 +58,14 @@
 }
 .popover{
     display: none;
+    position: relative;
     background-color: #FAFAFA;
     width: 100%;
     border: #DDDDDD 1px solid;
     border-radius: 4px;
     padding: 20px;
     margin-top: 15px;
+    z-index: 3;
 }
 .amenities li{
     padding-left: 20px;
