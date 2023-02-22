@@ -1,12 +1,15 @@
-footer
-{
-    background-color: #FFFFFF;
-    height: 60px;
-    width: 100%;
-    border-top: 1px solid #CCCCCC;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer {
     position: fixed;
-}
+    bottom: 0;
+    height:60px;
+    width:100%;
+    border-top: 1px solid #CCCCCC;
+    background-color: white;
+  }
+  
+  span.foot{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
